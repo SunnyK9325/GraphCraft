@@ -140,7 +140,6 @@ const GraphCraft = ({ onAreaClick, onNodeClick, node, saveClick, setSaveClick, h
             } else {
                 handleError(false, 'Saved successfully');
             }
-
             setSaveClick(false);
         }
     }, [saveClick, nodes, edges, setSaveClick, handleError]);
@@ -190,4 +189,5 @@ GraphCraft.propTypes = {
 export default GraphCraft;
 
 // Made by Sunny Kumar, IIT Guwahati, 2024 (SunnyK9325)
+
 
