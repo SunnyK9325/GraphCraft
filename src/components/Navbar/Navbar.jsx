@@ -17,7 +17,7 @@ const Navbar = ({ handleSave, error, errorMessage }) => {
             // Set a timer to hide the error message after 2 seconds
             const timer = setTimeout(() => {
                 setShowErrorMessage(false);
-            }, 2000);
+            }, 5000);
 
             return () => clearTimeout(timer);
         }
