@@ -21,7 +21,7 @@ const Navbar = ({ handleSave, error, errorMessage }) => {
 
             return () => clearTimeout(timer);
         }
-    }, [errorMessage, handleSave]);
+    }, [errorMessage]);
 
     return (
         <div className="navbar">
