@@ -1,0 +1,63 @@
+// Made by Sunny Kumar, IIT Guwahati, 2024 (SunnyK9325)
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #F3F3F3;
+    width: 100wh;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        height: 50px;
+        margin: none;
+        flex: 1;
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 78%;
+
+            .status {
+                background-color: #FBCCCB;
+                padding: 12px 17px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 10px;
+                margin-bottom: -8px;
+                color: rgb(43, 41, 41);
+            }
+        }
+
+        .right {
+            display: flex;
+            flex: 22%;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                color: #384b9e;
+                border: 2px solid #6e86af;
+                background-color: white;
+                font-weight: bold;
+                height: 35px;
+                border-radius: 5px;
+                padding: 5px 20px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    border: 3px solid #7FBBE8;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+    }
+}
