@@ -26,13 +26,12 @@ const Navbar = ({ handleSave, error, errorMessage }) => {
     return (
         <div className="navbar">
             <div className="container">
-                <div className="left" style={{justifyContent: !showErrorMessage ? "flex-start" : "center" }}>
-                    {!showErrorMessage && (
+                <div className="left" style={{justifyContent: !showErrorMessage ? "flex-start" : "center"}}>
+                    {!showErrorMessage ? (
                         <div className="title">
                             <span>Made by SunnyK9325</span>
                         </div>
-                    )}
-                    {showErrorMessage && (
+                    ) : (
                         <div className="status" style={{ backgroundColor: error ? "#FBCCCB" : "#C3FF93" }}>
                             <span>{errorMessage}</span>
                         </div>
