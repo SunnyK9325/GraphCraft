@@ -11,7 +11,7 @@ const App = () => {
     const [selectedNode, setSelectedNode] = useState("");
     const [node, setNode] = useState({ id: '', label: '' });
     const [error, setError] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState({ message: '', key: 0 });
     const [isSaveClicked, setSaveClicked] = useState(false);
 
     const togglePanel = () => {
@@ -32,13 +32,14 @@ const App = () => {
     }
 
     const handleSave = () => {
+        console.log("reached app.jsx");
         setSaveClicked(true);
     }
 
     const handleError = (err, message) => {
         setError(err);
-        setErrorMessage(message);
-    }
+        setErrorMessage({ message, key: new Date().getTime() });
+    };
 
     return (
         <div className="app">

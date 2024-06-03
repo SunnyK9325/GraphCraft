@@ -121,6 +121,7 @@ const GraphCraft = ({ onAreaClick, onNodeClick, node, saveClick, setSaveClick, h
     // Check flow conditions when saveClick prop changes
     useEffect(() => {
         if (saveClick) {
+            console.log("reached graphcraft.jsx to check for flow conditions");
             const nodeIdsWithEdges = new Set();
 
             // Collect node IDs that have incoming or outgoing edges
